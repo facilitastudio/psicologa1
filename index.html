@@ -179,7 +179,11 @@ nav a.l:hover{opacity:1;color:var(--lime)}
 .final .lead{max-width:640px;margin:30px auto}
 .phone{display:block;font-family:Kalam,cursive;font-size:30px;color:var(--lilac);margin-top:26px}
 
-footer{background:var(--deeper);padding:36px var(--pad);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+footer{background:var(--deeper);padding:36px max(var(--pad), calc((100% - var(--wrap)) / 2)) 24px}
+.foot-row{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.credit{margin-top:28px;padding-top:20px;border-top:1px solid rgba(244,241,231,.12);font-size:13px;opacity:.6;text-align:center}
+.credit a{color:var(--cream);font-weight:700}
+.credit a:hover{color:var(--lime)}
 footer b{font-family:Fraunces,serif;font-weight:900;font-size:20px;display:block}
 footer small{font-size:14px;opacity:.7}
 footer a{font-weight:600;color:var(--lime)}
@@ -260,7 +264,8 @@ footer a{font-weight:600;color:var(--lime)}
   .mode{padding:30px 24px}.mode h3{font-size:40px}
   .faq details{padding:18px 20px}.faq summary{font-size:16px}
   .final{padding:80px 20px}
-  footer{flex-direction:column;text-align:center;padding:32px 20px}
+  footer{text-align:center;padding:32px 20px 90px}
+  .foot-row{flex-direction:column}
   .d-hide{display:none}
   .hero h1 .h-script{white-space:normal;text-wrap:balance;font-size:clamp(28px,8.6vw,40px)}
   section > .doodle{--s:44px !important;top:16px !important}
@@ -436,8 +441,11 @@ footer a{font-weight:600;color:var(--lime)}
 </main>
 
 <footer>
-  <div><b>Heloisa S. Pasturchak</b><small>Psicóloga &nbsp;|&nbsp; CRP 08/43868 &nbsp;|&nbsp; Ponta Grossa, PR</small></div>
-  <a href="https://www.instagram.com/psi.heloisapasturchak/" target="_blank" rel="noopener">@psi.heloisapasturchak</a>
+  <div class="foot-row">
+    <div><b>Heloisa S. Pasturchak</b><small>Psicóloga &nbsp;|&nbsp; CRP 08/43868 &nbsp;|&nbsp; Ponta Grossa, PR</small></div>
+    <a href="https://www.instagram.com/psi.heloisapasturchak/" target="_blank" rel="noopener">@psi.heloisapasturchak</a>
+  </div>
+  <p class="credit">Site desenvolvido por <a href="https://jankestudio.com" target="_blank" rel="noopener">Janke Studio</a></p>
 </footer>
 
 <a class="fab wa" href="#" aria-label="Falar no WhatsApp"><svg style="color:var(--ink)"><use href="#i-wa"/></svg></a>
