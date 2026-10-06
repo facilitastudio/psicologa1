@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Heloisa S. Pasturchak | Psicóloga em Ponta Grossa e Online</title>
+<meta name="description" content="Psicóloga clínica (CRP 08/43868). Terapia para reduzir a ansiedade, criar limites e construir relações mais leves. Atendimento online e presencial em Ponta Grossa, PR.">
+<meta property="og:title" content="Heloisa S. Pasturchak | Psicóloga">
+<meta property="og:description" content="Reduza a ansiedade e resgate quem você é. Atendimento online e presencial em Ponta Grossa, PR.">
+<meta property="og:image" content="/img/og.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#23402D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%2323402D'/%3E%3Cpath d='M30 58c6 14 34 16 41-2M38 36v10M62 35v10' stroke='%23D8F35B' stroke-width='7' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,900;1,9..144,900&family=Kalam:wght@700&family=Oswald:wght@400;500&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/heloisa-livro.webp">
+<style>
+:root{
+  --green:#23402D; --dark:#193021; --deeper:#12241A;
+  --lime:#D8F35B; --lilac:#C8A7EF; --purple:#804CC7;
+  --cream:#F4F1E7; --paper:#FAF9F4; --ink:#1B271F;
+  --wrap:1200px; --pad:clamp(20px,5vw,120px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--green);color:var(--cream);font-family:Sora,system-ui,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.16;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E")}
+.wrap{max-width:var(--wrap);margin:0 auto;position:relative}
+section{position:relative;padding:110px var(--pad)}
+.bg-dark{background:var(--dark)}
+.bg-paper{background:var(--paper);color:var(--ink)}
+
+/* type */
+.eyebrow{font-weight:600;font-size:14px;letter-spacing:.1em;color:var(--lilac);text-transform:uppercase}
+.bg-paper .eyebrow{color:var(--purple)}
+.h-cond{font-family:Oswald,sans-serif;font-weight:400;font-size:clamp(38px,5vw,64px);line-height:1.05}
+.h-script{font-family:Kalam,cursive;font-weight:700;font-size:clamp(36px,5.4vw,72px);line-height:1.15;color:var(--lime);display:inline-block;transform:rotate(-2deg)}
+.bg-paper .h-script{color:var(--purple)}
+.title{text-align:center;margin-bottom:56px}
+.title .eyebrow{margin-bottom:8px}
+.lead{font-size:clamp(16px,1.5vw,19px);line-height:1.6;opacity:.88}
+
+/* button */
+.btn{position:relative;z-index:0;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:12px;background:var(--lime);color:var(--ink);font-weight:700;font-size:17px;padding:20px 34px;border-radius:999px;border:2px solid var(--ink);
+  box-shadow:5px 5px 0 var(--lilac),0 168.986px 47.276px 0 rgba(216,243,91,0),0 107.628px 43.252px 0 rgba(216,243,91,.02),0 60.352px 36.211px 0 rgba(216,243,91,.07),0 27.158px 27.158px 0 rgba(216,243,91,.12),0 7.041px 15.088px 0 rgba(216,243,91,.14)}
+.btn::before,.fab::before{content:"";height:100%;position:absolute;top:0;left:0;opacity:0;background:#fff;box-shadow:0 0 30px 20px #ffffffaa;transform:skewX(-30deg);mix-blend-mode:plus-lighter;animation:brilho 3s linear infinite;z-index:-1}
+.pol{isolation:isolate;overflow:hidden}
+.pol .ph,.pol figcaption{position:relative;z-index:1}
+.pol::before{content:"";position:absolute;top:-20%;bottom:-20%;left:-45%;width:38%;background:linear-gradient(90deg,transparent,rgba(200,167,239,.32),rgba(216,243,91,.42),transparent);transform:skewX(-20deg);animation:sheen 6s ease-in-out infinite;z-index:0;pointer-events:none}
+.pol-small::before{animation-delay:2s}
+.pol-about::before{animation-delay:1s}
+@keyframes sheen{0%{left:-45%}55%,100%{left:120%}}
+.sticker,.crp,.tag,.step .badge,.mode .pill{overflow:hidden;isolation:isolate;white-space:nowrap}
+.tag,.step .badge,.mode .pill{position:relative}
+.sticker::after,.crp::after,.tag::after,.step .badge::after,.mode .pill::after{content:"";height:100%;position:absolute;top:0;left:0;opacity:0;background:#fff;box-shadow:0 0 20px 12px #ffffffaa;transform:skewX(-30deg);mix-blend-mode:plus-lighter;animation:brilho 3s linear infinite;z-index:1;pointer-events:none}
+.crp::after,.step .badge::after{animation-delay:1.2s}
+.tag::after{box-shadow:0 0 16px 8px #ffffff55}
+@keyframes brilho{0%{opacity:0;left:0%}50%{opacity:1}100%{opacity:0;left:100%}}
+.btn svg{width:22px;height:22px;flex:none}
+.btn-sm{font-size:15px;padding:13px 22px}
+
+/* doodles */
+.doodle{position:absolute;pointer-events:none;width:var(--s,70px);height:var(--s,70px);color:var(--lime);transform:rotate(var(--r,0deg));z-index:1}
+.doodle.lilac{color:var(--lilac)}
+.doodle svg{width:100%;height:100%;overflow:visible}
+
+/* header */
+header{position:relative;z-index:5;padding:28px var(--pad);display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{display:flex;align-items:baseline;gap:10px;white-space:nowrap}
+.logo b{font-family:Fraunces,serif;font-weight:900;font-size:22px}
+.logo span{font-family:Kalam,cursive;font-size:22px;color:var(--lime)}
+nav{display:flex;align-items:center;gap:36px}
+nav a.l{font-size:15px;opacity:.85}
+nav a.l:hover{opacity:1;color:var(--lime)}
+
+/* hero */
+.hero{padding-top:60px;padding-bottom:120px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr 1fr;gap:60px;align-items:center}
+.tag{display:inline-block;border:1.5px solid var(--lilac);color:var(--lilac);border-radius:999px;padding:9px 16px;font-size:13px;font-weight:600;letter-spacing:.08em}
+.hero h1{margin:28px 0 24px}
+.hero h1 .h-cond{display:block;font-size:clamp(42px,5.2vw,76px);line-height:1;text-wrap:balance}
+.hero h1 .h-script{font-size:clamp(34px,3.9vw,56px);margin-top:4px;white-space:nowrap}
+.hero .lead{max-width:600px;margin-bottom:32px}
+.proof{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:28px;font-size:14px;opacity:.85}
+.proof li{list-style:none;display:flex;align-items:center;gap:8px}
+.proof li::before,.tick{content:"";width:14px;height:14px;background:var(--lime);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);flex:none}
+.collage{position:relative;height:600px}
+.pol{position:absolute;background:var(--paper);padding:16px 16px 0;box-shadow:0 14px 30px rgba(0,0,0,.35)}
+.pol img{width:100%;height:100%;object-fit:cover}
+.pol .ph{overflow:hidden}
+.pol figcaption{font-family:Kalam,cursive;color:var(--ink);font-size:26px;text-align:center;padding:10px 0 14px}
+.pol-main{width:380px;left:120px;top:20px;transform:rotate(4deg);z-index:2}
+.pol-main .ph{height:380px}
+.pol-small{width:250px;left:0;top:300px;transform:rotate(-8deg);padding-bottom:16px;z-index:1}
+.pol-small .ph{height:250px}
+.pol-small img{object-position:center 20%}
+.tape{position:absolute;width:130px;height:34px;background:rgba(244,241,231,.7);left:250px;top:4px;transform:rotate(-6deg);z-index:3}
+.sticker{position:absolute;background:var(--lime);color:var(--ink);font-family:Kalam,cursive;font-size:28px;padding:10px 18px;transform:rotate(-7deg);box-shadow:0 6px 14px rgba(0,0,0,.25);left:300px;top:490px;z-index:3}
+
+/* identification */
+.notes{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:48px}
+.note{background:var(--paper);color:var(--ink);border-radius:22px;padding:26px 28px}
+.note small{display:block;font-size:13px;color:#8c8c8c;margin-bottom:12px}
+.note p{font-weight:700;font-size:20px;line-height:1.35}
+.note em{font-style:normal;color:var(--purple)}
+.center{text-align:center}
+.center .lead{max-width:640px;margin:0 auto 26px}
+
+/* ticker */
+.ticker{padding:30px 0;overflow:hidden;background:var(--green)}
+.ticker-track{background:var(--lime);color:var(--ink);transform:rotate(-1.5deg);width:110%;margin-left:-5%;overflow:hidden}
+.ticker-move{display:flex;gap:28px;align-items:center;padding:18px 0;width:max-content;animation:tick 30s linear infinite}
+.ticker-move span{font-family:Oswald,sans-serif;font-weight:500;font-size:30px;letter-spacing:.04em;white-space:nowrap}
+.ticker-move i{width:20px;height:20px;background:var(--purple);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%)}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* areas */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.card{background:var(--dark);border:1.5px solid rgba(216,243,91,.6);border-radius:24px;padding:32px 26px}
+.card .n{font-family:Fraunces,serif;font-weight:900;font-size:44px;color:var(--lime);line-height:1}
+.card h3{font-family:Oswald,sans-serif;font-weight:500;font-size:28px;line-height:1.1;margin:16px 0}
+.card p{font-size:15px;opacity:.8;line-height:1.55}
+.quote{text-align:center;margin-top:76px}
+.quote b{display:block;font-family:Fraunces,serif;font-weight:900;font-size:clamp(28px,4vw,58px);line-height:1.15}
+.quote span{display:inline-block;background:var(--lilac);color:var(--ink);font-family:Fraunces,serif;font-style:italic;font-weight:900;font-size:clamp(20px,3.6vw,52px);padding:8px 20px 14px;transform:rotate(-2deg);margin-top:8px}
+
+/* about */
+.about .wrap{display:grid;grid-template-columns:470px 1fr;gap:90px;align-items:center}
+.about .collage{height:560px}
+.pol-about{width:400px;left:30px;top:30px;transform:rotate(-3deg);background:#fff;padding:16px;box-shadow:0 12px 30px rgba(0,0,0,.18)}
+.pol-about .ph{height:440px}
+.clip{position:absolute;left:90px;top:0;width:26px;height:70px;border:4px solid #999;border-radius:13px;z-index:3}
+.crp{position:absolute;left:300px;top:500px;background:var(--lime);color:var(--ink);font-weight:700;font-size:15px;letter-spacing:.04em;padding:10px 16px;transform:rotate(5deg);z-index:3}
+.about h2 .h-cond{display:block;color:var(--ink)}
+.about h2 .h-script{font-size:clamp(52px,6vw,80px)}
+.about .strong{font-weight:600;font-size:19px;margin:24px 0 16px}
+.about .soft{font-size:17px;opacity:.8;line-height:1.65}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 32px}
+.chips span{background:rgba(200,167,239,.35);border-radius:999px;padding:10px 16px;font-size:14px;font-weight:600}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:56px}
+.step{background:var(--paper);color:var(--ink);border-radius:24px;padding:36px 32px}
+.step.alt{background:var(--lilac)}
+.step .badge{display:inline-block;background:var(--lime);font-weight:700;font-size:13px;letter-spacing:.08em;padding:6px 14px;transform:rotate(-3deg)}
+.step.alt .badge{background:var(--paper)}
+.step h3{font-family:Oswald,sans-serif;font-weight:500;font-size:34px;line-height:1.1;margin:16px 0}
+.step p{opacity:.8}
+
+/* modes */
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:1000px;margin:0 auto 32px}
+.mode{border-radius:28px;padding:44px 40px;color:var(--ink)}
+.mode h3{font-family:Kalam,cursive;font-size:56px;line-height:1.1}
+.mode p{font-size:17px;opacity:.85;margin:18px 0}
+.mode .pill{display:inline-block;background:var(--ink);color:var(--cream);border-radius:999px;padding:8px 14px;font-size:13px;font-weight:600}
+
+/* faq */
+.faq{max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+.faq details{background:var(--paper);color:var(--ink);border-radius:18px;padding:24px 30px}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;font-weight:700;font-size:19px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--purple);font-size:26px;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq p{margin-top:12px;opacity:.8}
+
+/* final */
+.final{padding:130px var(--pad);text-align:center}
+.final .h-cond{font-size:clamp(46px,6.4vw,92px);line-height:1}
+.final .h-script{font-size:clamp(42px,6.9vw,100px)}
+.final .lead{max-width:640px;margin:30px auto}
+.phone{display:block;font-family:Kalam,cursive;font-size:30px;color:var(--lilac);margin-top:26px}
+
+footer{background:var(--deeper);padding:36px var(--pad);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+footer b{font-family:Fraunces,serif;font-weight:900;font-size:20px;display:block}
+footer small{font-size:14px;opacity:.7}
+footer a{font-weight:600;color:var(--lime)}
+
+.fab{position:fixed;right:20px;bottom:20px;z-index:50;width:60px;height:60px;border-radius:50%;background:var(--lime);border:2px solid var(--ink);box-shadow:4px 4px 0 var(--lilac);display:grid;place-items:center;overflow:hidden;z-index:50;isolation:isolate}
+.fab svg{width:30px;height:30px}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}.ticker-move,.btn::before,.fab::before,.pol::before,.sticker::after,.crp::after,.tag::after,.step .badge::after,.mode .pill::after{animation:none}}
+
+/* responsive */
+@media (max-width:1100px){
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .about .wrap{grid-template-columns:1fr;gap:40px;justify-items:center;text-align:center}
+  .chips{justify-content:center}
+}
+@media (max-width:960px){
+  nav a.l{display:none}
+  .hero .wrap{grid-template-columns:1fr;text-align:center;justify-items:center}
+  .hero .lead{margin-inline:auto}
+  .proof{justify-content:center}
+  .hero .collage{width:520px;max-width:100%}
+  .notes,.steps{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  section{padding:64px 20px}
+  header{padding:18px 20px}
+  .logo{flex-direction:column;gap:0}
+  .logo b{font-size:17px}.logo span{font-size:16px}
+  nav .btn{display:none}
+  .hero{padding-top:20px}
+  .collage{height:390px;width:350px;margin:0 auto}
+  .pol-main{width:240px;left:95px;top:15px;padding:11px 11px 0}
+  .pol-main .ph{height:240px}
+  .pol-main figcaption{font-size:18px;padding:8px 0 10px}
+  .pol-small{width:160px;top:180px;left:10px;padding:10px}
+  .pol-small .ph{height:150px}
+  .tape{width:90px;height:26px;left:180px}
+  .sticker{font-size:22px;left:auto;right:0;top:330px;padding:9px 14px}
+  .hero .btn,.center .btn,.about .btn,.final .btn,.step-cta .btn{width:100%}
+  .btn{padding:18px 22px;font-size:16px}
+  .proof{flex-direction:column;align-items:center;gap:8px}
+  .title{margin-bottom:32px}
+  .notes,.cards,.steps,.modes{grid-template-columns:1fr;gap:14px}
+  .note{padding:20px 22px}.note p{font-size:17px}
+  .card{padding:26px}
+  .ticker-move span{font-size:22px}
+  .quote{margin-top:44px}
+  .about .collage{height:380px;width:320px}
+  .pol-about{width:270px;left:25px;top:25px;padding:12px}
+  .pol-about .ph{height:290px}
+  .crp{left:180px;top:340px;font-size:13px}
+  .clip{left:70px}
+  .step{padding:26px 22px}.step h3{font-size:26px}
+  .mode{padding:30px 24px}.mode h3{font-size:40px}
+  .faq details{padding:18px 20px}.faq summary{font-size:16px}
+  .final{padding:80px 20px}
+  footer{flex-direction:column;text-align:center;padding:32px 20px}
+  .d-hide{display:none}
+  .hero h1 .h-script{white-space:normal;text-wrap:balance;font-size:40px}
+  section > .doodle{--s:44px !important;top:16px !important}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="d-star" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 91C30 63 40 35 50 7c8 27 18 55 31 83C60 74 33 56 7 39c31-1 59-2 87-3C70 55 44 74 15 93"/><path d="M47 13l6-8"/></g></symbol>
+    <symbol id="d-smile" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M52 9c25-1 41 18 40 43-1 25-20 41-44 40C23 91 7 72 8 48 9 25 27 9 47 11c4 0 8 1 11 3"/><path d="M36 35l1 13M63 34l1 13M27 58c8 19 37 21 48-3"/></g></symbol>
+    <symbol id="d-burst" viewBox="0 0 100 100"><path fill="currentColor" d="M50 4l6 15 11-12 1 16 15-7-5 16 16-2-9 13 15 4-13 9 13 8-15 4 8 14-16-3 3 16-14-8-3 16-10-12-7 15-6-15-11 12-1-16-15 7 5-16-16 2 9-13-15-4 13-9-13-8 15-4-8-14 16 3-3-16 14 8 3-16 10 12z"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.42.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.17-3.48-8.41"/></symbol>
+  </defs>
+</svg>
+
+<header>
+  <a class="logo" href="#topo"><b>Heloisa S. Pasturchak</b><span>psicóloga</span></a>
+  <nav>
+    <a class="l" href="#ajuda">Como posso ajudar</a>
+    <a class="l" href="#sobre">Sobre mim</a>
+    <a class="l" href="#como-funciona">Como funciona</a>
+    <a class="l" href="#duvidas">Dúvidas</a>
+    <a class="btn btn-sm wa" href="#"><svg><use href="#i-wa"/></svg>Agendar sessão</a>
+  </nav>
+</header>
+
+<main id="topo">
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="tag">PSICÓLOGA CLÍNICA &nbsp;|&nbsp; CRP 08/43868</span>
+      <h1><span class="h-cond">Reduza a ansiedade</span><span class="h-script">e resgate quem você&nbsp;é.</span></h1>
+      <p class="lead">Terapia para quem vive no automático, se cobra demais e sente que precisa ser uma versão "funcional" de si o tempo todo. Vamos construir limites saudáveis e relações mais leves, no seu ritmo.</p>
+      <a class="btn wa" href="#"><svg><use href="#i-wa"/></svg>Agendar minha primeira sessão</a>
+      <ul class="proof"><li>Online e presencial</li><li>Crianças, adolescentes, adultos e idosos</li><li>Resposta pelo WhatsApp</li></ul>
+    </div>
+    <div class="collage">
+      <figure class="pol pol-small"><div class="ph"><img src="img/heloisa-blazer.webp" alt="Heloisa no consultório" width="510" height="510"></div></figure>
+      <figure class="pol pol-main"><div class="ph"><img src="img/heloisa-livro.webp" alt="Psicóloga Heloisa S. Pasturchak lendo um livro" width="900" height="900" fetchpriority="high"></div><figcaption>Heloisa S. Pasturchak</figcaption></figure>
+      <div class="tape"></div>
+      <div class="sticker">Agenda aberta</div>
+      <i class="doodle" style="--s:80px;--r:12deg;left:30px;top:30px"><svg><use href="#d-smile"/></svg></i>
+      <i class="doodle lilac" style="--s:70px;--r:-10deg;right:-10px;top:330px"><svg><use href="#d-star"/></svg></i>
+    </div>
+  </div>
+</section>
+
+<section class="bg-dark">
+  <i class="doodle" style="--s:70px;--r:-15deg;left:6%;top:80px"><svg><use href="#d-star"/></svg></i>
+  <i class="doodle lilac d-hide" style="--s:56px;--r:10deg;right:8%;top:130px"><svg><use href="#d-smile"/></svg></i>
+  <div class="wrap">
+    <div class="title rv">
+      <p class="eyebrow">Nem tudo é frescura. Nem tudo é fase.</p>
+      <h2><span class="h-cond">Você se identifica com</span><br><span class="h-script">algum desses sinais?</span></h2>
+    </div>
+    <div class="notes">
+      <div class="note rv"><small>‹ Notas</small><p>Sua mente <em>não desliga</em>, nem na hora de dormir.</p></div>
+      <div class="note rv"><small>‹ Notas</small><p>Você diz sim para tudo e depois se sente <em>esgotada(o)</em>.</p></div>
+      <div class="note rv"><small>‹ Notas</small><p>A cobrança interna <em>nunca acha</em> que está bom o suficiente.</p></div>
+      <div class="note rv"><small>‹ Notas</small><p>Você sente que precisa <em>performar</em> uma versão de si o tempo todo.</p></div>
+      <div class="note rv"><small>‹ Notas</small><p>Relações que deveriam ser leves <em>estão pesando</em>.</p></div>
+      <div class="note rv"><small>‹ Notas</small><p>A ansiedade aparece no corpo: <em>aperto no peito</em>, cansaço, irritação.</p></div>
+    </div>
+    <div class="center rv">
+      <p class="lead">Se você se reconheceu em pelo menos um, não precisa passar por isso sozinha(o).</p>
+      <a class="btn wa" href="#"><svg><use href="#i-wa"/></svg>Quero conversar com a Heloisa</a>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div class="ticker-track"><div class="ticker-move">
+  <span>ANSIEDADE</span><i></i><span>AUTOCONHECIMENTO</span><i></i><span>LIMITES</span><i></i><span>RELAÇÕES</span><i></i><span>AUTOESTIMA</span><i></i><span>ESTRESSE</span><i></i><span>AUTENTICIDADE</span><i></i>
+  <span>ANSIEDADE</span><i></i><span>AUTOCONHECIMENTO</span><i></i><span>LIMITES</span><i></i><span>RELAÇÕES</span><i></i><span>AUTOESTIMA</span><i></i><span>ESTRESSE</span><i></i><span>AUTENTICIDADE</span><i></i>
+</div></div></div>
+
+<section id="ajuda">
+  <i class="doodle lilac" style="--s:80px;--r:-12deg;left:5%;top:110px"><svg><use href="#d-star"/></svg></i>
+  <i class="doodle d-hide" style="--s:62px;--r:15deg;right:7%;top:90px"><svg><use href="#d-smile"/></svg></i>
+  <div class="wrap">
+    <div class="title rv">
+      <p class="eyebrow">Não é mágica, é entender como você funciona</p>
+      <h2><span class="h-cond">Como a terapia pode</span><br><span class="h-script">te ajudar na prática</span></h2>
+    </div>
+    <div class="cards">
+      <article class="card rv"><div class="n">01</div><h3>Ansiedade e estresse</h3><p>Entender o que dispara sua ansiedade e aprender a lidar com ela antes que ela tome conta do seu dia.</p></article>
+      <article class="card rv"><div class="n">02</div><h3>Limites e autocobrança</h3><p>Aprender a dizer não sem culpa e sair do ciclo de se cobrar por tudo, o tempo todo.</p></article>
+      <article class="card rv"><div class="n">03</div><h3>Relações mais leves</h3><p>Reconhecer padrões nos relacionamentos e construir vínculos onde você se sente segura(o).</p></article>
+      <article class="card rv"><div class="n">04</div><h3>Autoconhecimento</h3><p>Resgatar sua autenticidade e parar de performar uma versão de si que não é você.</p></article>
+    </div>
+    <div class="quote rv"><b>Não é sobre aguentar mais.</b><span>É sobre viver com mais leveza.</span></div>
+  </div>
+</section>
+
+<section id="sobre" class="bg-paper about">
+  <div class="wrap">
+    <div class="collage rv">
+      <figure class="pol pol-about"><div class="ph"><img src="img/heloisa-sofa.webp" alt="Heloisa sentada no sofá do consultório" width="510" height="510" loading="lazy"></div></figure>
+      <div class="clip"></div>
+      <div class="crp">CRP 08/43868</div>
+      <i class="doodle lilac" style="--s:70px;--r:10deg;right:0;top:10px"><svg><use href="#d-star"/></svg></i>
+    </div>
+    <div class="rv">
+      <h2><span class="h-cond">Oi, eu sou a</span><span class="h-script">Heloisa.</span></h2>
+      <p class="strong">Sou psicóloga clínica e atendo crianças, adolescentes, adultos e idosos, online e presencialmente em Ponta Grossa, PR.</p>
+      <p class="soft">Uso séries, filmes e a cultura pop para aproximar a psicologia do seu dia a dia, porque entender o que você sente não precisa ser complicado. Meu trabalho é te ajudar a reduzir a ansiedade, criar limites e construir relações em que você possa ser você.</p>
+      <div class="chips"><span>Escuta acolhedora e sem julgamentos</span><span>Linguagem do dia a dia</span><span>Sigilo profissional</span></div>
+      <a class="btn wa" href="#"><svg><use href="#i-wa"/></svg>Agendar uma conversa</a>
+    </div>
+  </div>
+</section>
+
+<section id="como-funciona">
+  <i class="doodle" style="--s:72px;--r:-8deg;right:7%;top:80px"><svg><use href="#d-burst"/></svg></i>
+  <div class="wrap">
+    <div class="title rv">
+      <p class="eyebrow">Simples, rápido e sem complicação</p>
+      <h2><span class="h-cond">Como começar a</span><br><span class="h-script">sua terapia</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step rv"><span class="badge">PASSO 01</span><h3>Me chama no WhatsApp</h3><p>Clique em qualquer botão da página e me conte, do seu jeito, o que está buscando.</p></div>
+      <div class="step alt rv"><span class="badge">PASSO 02</span><h3>Escolha formato e horário</h3><p>Online ou presencial em Ponta Grossa, no horário que encaixa na sua rotina.</p></div>
+      <div class="step rv"><span class="badge">PASSO 03</span><h3>Primeira sessão</h3><p>Um espaço seguro para você falar, sem julgamentos, e a gente traçar o próximo passo juntas(os).</p></div>
+    </div>
+    <div class="center step-cta rv"><a class="btn wa" href="#"><svg><use href="#i-wa"/></svg>Dar o primeiro passo agora</a></div>
+  </div>
+</section>
+
+<section class="bg-dark">
+  <div class="wrap">
+    <div class="title rv">
+      <p class="eyebrow">Online e presencial</p>
+      <h2><span class="h-cond">Atendimento do jeito</span><br><span class="h-script">que funciona para você</span></h2>
+    </div>
+    <div class="modes">
+      <div class="mode rv" style="background:var(--lilac)"><h3>Online</h3><p>De qualquer lugar, pelo celular ou computador. A mesma seriedade e sigilo do consultório, sem trânsito e sem correria.</p><span class="pill">Para todo o Brasil</span></div>
+      <div class="mode rv" style="background:var(--lime)"><h3>Presencial</h3><p>Consultório em Ponta Grossa, PR. Para quem prefere o olho no olho e um tempo fora da rotina só seu.</p><span class="pill">Ponta Grossa, PR</span></div>
+    </div>
+    <p class="center" style="opacity:.8">Atendimento infantojuvenil, adultos e idosos.</p>
+  </div>
+</section>
+
+<section id="duvidas">
+  <div class="wrap">
+    <div class="title rv">
+      <p class="eyebrow">Dúvidas frequentes</p>
+      <h2><span class="h-cond">Antes de agendar,</span><br><span class="h-script">talvez você pergunte</span></h2>
+    </div>
+    <div class="faq rv">
+      <details open><summary>Como sei se preciso de terapia?</summary><p>Se algo está afetando seu sono, trabalho, relações ou bem-estar, já é motivo. Você não precisa estar no limite para buscar ajuda.</p></details>
+      <details><summary>Terapia online funciona mesmo?</summary><p>Sim. O atendimento online é regulamentado pelo Conselho Federal de Psicologia e tem a mesma seriedade e sigilo do presencial.</p></details>
+      <details><summary>Você atende crianças e adolescentes?</summary><p>Sim. Atendo crianças, adolescentes, adultos e idosos, online e presencialmente.</p></details>
+      <details><summary>Quanto tempo dura cada sessão?</summary><p>As sessões duram em média 50 minutos, com frequência combinada de acordo com a sua necessidade.</p></details>
+      <details><summary>Como faço para agendar?</summary><p>É só clicar em qualquer botão desta página e me chamar no WhatsApp. Eu te respondo com os horários disponíveis.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="bg-dark final">
+  <i class="doodle" style="--s:110px;--r:-14deg;left:9%;top:100px"><svg><use href="#d-star"/></svg></i>
+  <i class="doodle lilac" style="--s:90px;--r:12deg;right:16%;top:300px"><svg><use href="#d-smile"/></svg></i>
+  <i class="doodle d-hide" style="--s:50px;right:22%;top:80px"><svg><use href="#d-burst"/></svg></i>
+  <div class="wrap rv">
+    <h2><span class="h-cond">O primeiro passo</span><br><span class="h-script">é só uma mensagem.</span></h2>
+    <p class="lead">Agenda aberta para atendimentos online e presenciais. Me chama e a gente encontra o melhor horário para você.</p>
+    <a class="btn wa" href="#"><svg><use href="#i-wa"/></svg>Agendar minha sessão agora</a>
+    <a class="phone wa" href="#">(42) 99922-3243</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div><b>Heloisa S. Pasturchak</b><small>Psicóloga &nbsp;|&nbsp; CRP 08/43868 &nbsp;|&nbsp; Ponta Grossa, PR</small></div>
+  <a href="https://www.instagram.com/psi.heloisapasturchak/" target="_blank" rel="noopener">@psi.heloisapasturchak</a>
+</footer>
+
+<a class="fab wa" href="#" aria-label="Falar no WhatsApp"><svg style="color:var(--ink)"><use href="#i-wa"/></svg></a>
+
+<script>
+  var WA = "https://wa.me/5542999223243?text=" + encodeURIComponent("Olá, Heloisa! Vim pelo site e gostaria de agendar uma sessão.");
+  document.querySelectorAll("a.wa").forEach(function(a){ a.href = WA; a.target = "_blank"; a.rel = "noopener"; });
+  var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("on"); io.unobserve(e.target); } }); }, {threshold:.12});
+  document.querySelectorAll(".rv").forEach(function(el){ io.observe(el); });
+</script>
+</body>
+</html>
